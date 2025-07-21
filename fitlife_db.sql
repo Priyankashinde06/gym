@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS fitlife_db;
+USE fitlife_db;
+
+CREATE TABLE IF NOT EXISTS members (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    class VARCHAR(50) NOT NULL,
+    message TEXT,
+    registration_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
